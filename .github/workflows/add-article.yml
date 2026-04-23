@@ -1,0 +1,64 @@
+name: 添加公众号解读文章
+
+on:
+  workflow_dispatch:
+    inputs:
+      article_url:
+        description: '公众号文章链接'
+        required: true
+      article_title:
+        description: '文章标题'
+        required: true
+      source_account:
+        description: '来源公众号'
+        required: true
+        type: choice
+        options:
+          - bsiHealthcare
+          - 洲通健康科技
+          - Pure Global 普瑞纯证
+          - 其他
+      category:
+        description: '对应法规来源'
+        required: true
+        type: choice
+        options:
+          - eu_mdr
+          - fda
+          - nmpa
+          - imdrf
+          - general
+      notes:
+        description: '备注（可选）'
+        required: false
+
+jobs:
+  add-article:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          
+      - name: Add article
+        run: |
+          python scripts/add_wechat_article.py \
+            "${{ github.event.inputs.article_url }}" \
+            "${{ github.event.inputs.article_title }}" \
+            "${{ github.event.inputs.source_account }}" \
+            "${{ github.event.inputs.category }}" \
+            "${{ github.event.inputs.notes || '' }}"
+      
+      - name: Regenerate newsletter
+        run: |
+          REPORT=$(ls data/report_*.json | tail -1)
+          python scripts/generate_newsletter.py "$REPORT"
+      
+      - name: Commit
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "content: add wechat article ${{ github.event.inputs.article_title }} [skip ci]"
+          file_pattern: "data/ docs/newsletters/"
