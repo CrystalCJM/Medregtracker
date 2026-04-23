@@ -8,6 +8,8 @@ on:
 jobs:
   check:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
@@ -30,14 +32,11 @@ jobs:
           REPORT=$(ls data/report_*.json | tail -1)
           python scripts/generate_newsletter.py "$REPORT"
           
-      - name: Configure git and pull latest
+      - name: Commit and push results
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git pull origin main --rebase || true
-          
-      - name: Commit and push
-        run: |
           git add data/ docs/newsletters/
           git diff --staged --quiet || git commit -m "draft: weekly regulatory check $(date +%Y-%m-%d) [skip ci]"
-          git push origin main || (git pull origin main --rebase && git push origin main)
+          git pull origin main --rebase || true
+          git push origin main
