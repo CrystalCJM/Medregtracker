@@ -80,16 +80,18 @@ def generate_newsletter(report_file):
             lines.append("| 序号 | 更新主题 | 日期 | 原文链接 |")
             lines.append("|------|---------|------|---------|")
             
-            for i, item in enumerate(u.get("new_items", []), 1):
-                title = item.get("title", "")
-                link = item.get("link", "")
-                date = item.get("date", "")
-                
-                if link and link != "Unknown":
-                    lines.append(f"| {i} | {title} | {date} | [链接]({link}) |")
-                else:
-                    lines.append(f"| {i} | {title} | {date} | - |")
-            lines.append("")
+        lines.append("| 序号 | 解读主题 | 来源公众号 | 日期 | 链接 | 备注 |")
+        lines.append("|------|---------|-----------|------|------|------|")
+        
+        for i, article in enumerate(wechat_articles, 1):
+            title = article.get("title", "")
+            source = article.get("source", "")
+            date = article.get("date", "")
+            url = article.get("url", "")
+            notes = article.get("notes", "")
+            
+            lines.append(f"| {i} | {title} | {source} | {date} | [链接]({url}) | {notes} |")
+        lines.append("")
     
     # ========== 第二部分：行业解读与参考资料 ==========
     lines.append("---")
