@@ -64,7 +64,7 @@ def generate_newsletter(report_file):
         "",
         "---",
         "",
-        "*如有疑问，请联系法规事务部*",
+        "*如有疑问，请联系JM*",
         "",
         f"*生成时间：{datetime.now().strftime('%Y-%m-%d %H:%M')}*",
     ])
