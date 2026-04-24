@@ -253,7 +253,7 @@ def main():
     
     # 如果有更新，返回退出码 1（用于 GitHub Actions 条件判断）
     if updates:
-        sys.exit(1)
+        sys.exit(0)
 
 
 if __name__ == "__main__":
