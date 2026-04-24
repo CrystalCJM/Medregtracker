@@ -33,7 +33,7 @@ jobs:
           python scripts/generate_newsletter.py "$REPORT"
           
       - name: Pull latest changes
-        run: git pull --rebase origin main
+        run: git pull --rebase origin main || true
         
       - name: Commit results
         uses: stefanzweifel/git-auto-commit-action@v5
