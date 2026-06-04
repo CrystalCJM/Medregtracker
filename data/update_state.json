@@ -1,7 +1,7 @@
 {
   "eu_mdr": {
     "url": "https://health.ec.europa.eu/medical-devices-sector/new-regulations/guidance-mdcg-endorsed-documents-and-other-guidance_en",
-    "last_checked": "2026-05-28T09:41:27.160196",
+    "last_checked": "2026-06-04T09:40:17.622702",
     "titles": [
       "Skip to main content",
       "bgбългарски",
@@ -57,17 +57,17 @@
   },
   "team_nb": {
     "url": "https://www.team-nb.org/",
-    "last_checked": "2026-05-28T09:41:28.685755",
+    "last_checked": "2026-06-04T09:40:19.160626",
     "titles": [
       "Skip to content",
       "pascaleperspectives",
       "LATEST NEWSREAD MORE NEWS",
       "READ MORE NEWS",
-      "IVDR Technical Documentation Training for Manufacturers",
+      "MDR Technical Documentation Training for Manufacturers – Survey Report",
       "0 Comments",
+      "IVDR Technical Documentation Training for Manufacturers",
       "Legal expert opinion on MDR Article 50",
       "Medtech Insight publication",
-      "European Biosafety Network survey",
       "Team-NB Documents",
       "PRIVATE PART",
       "Lost password",
@@ -78,7 +78,7 @@
   },
   "imdrf": {
     "url": "https://www.imdrf.org/",
-    "last_checked": "2026-05-28T09:41:29.599164",
+    "last_checked": "2026-06-04T09:40:20.028873",
     "titles": [
       "Skip to main content",
       "Main navigation",
@@ -127,14 +127,14 @@
       "APEC Regulatory Harmonization Steering Committee (RHSC)",
       "Pan American Health Organization (PAHO)",
       "African Medical Devices Forum (AMDF)",
+      "South-East Asia Regulatory Network (SEARN)",
       "Official observers",
-      "Argentina, National Administration of Drugs, Food and Medical Devices",
-      "World Health Organization (WHO)"
+      "Argentina, National Administration of Drugs, Food and Medical Devices"
     ]
   },
   "cmde": {
     "url": "https://www.cmde.org.cn/flfg/zdyz/",
-    "last_checked": "2026-05-28T09:41:32.119412",
+    "last_checked": "2026-06-04T09:40:22.449438",
     "titles": []
   }
 }
