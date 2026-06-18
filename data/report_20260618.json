@@ -1,0 +1,29 @@
+{
+  "date": "2026-06-18",
+  "updates": [
+    {
+      "source": "Team-NB",
+      "category": "Team-NB",
+      "new_items": [
+        {
+          "title": "IVDR Technical Documentation Training for Manufacturers",
+          "link": "https://www.team-nb.org/",
+          "date": ""
+        },
+        {
+          "title": "Micro and small manufacturers supported by Team-NB",
+          "link": "https://www.team-nb.org/",
+          "date": ""
+        },
+        {
+          "title": "Team-NB representatives at the European Parliament",
+          "link": "https://www.team-nb.org/",
+          "date": ""
+        }
+      ],
+      "count": 3
+    }
+  ],
+  "total_updates": 3,
+  "summary": "本周发现 1 个来源有更新，共 3 条"
+}
