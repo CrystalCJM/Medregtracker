@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-22",
+  "updates": [
+    {
+      "source": "Team-NB",
+      "category": "Team-NB",
+      "new_items": [
+        {
+          "title": "MDR/IVDR revisions – Team-NB LinkedIn Safety Campaign",
+          "link": "https://www.team-nb.org/",
+          "date": ""
+        },
+        {
+          "title": "DIGICAP – Digitalizing the Conformity Assessment Process",
+          "link": "https://www.team-nb.org/",
+          "date": ""
+        },
+        {
+          "title": "Code of Conduct – Version 5.3",
+          "link": "https://www.team-nb.org/",
+          "date": ""
+        }
+      ],
+      "count": 3
+    }
+  ],
+  "total_updates": 3,
+  "summary": "本周发现 1 个来源有更新，共 3 条"
+}
