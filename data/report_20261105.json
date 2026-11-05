@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-05",
+  "updates": [
+    {
+      "source": "Team-NB",
+      "category": "Team-NB",
+      "new_items": [
+        {
+          "title": "Renaud Brendel",
+          "link": "https://www.team-nb.org/author/brendelteam-nb-org/",
+          "date": ""
+        },
+        {
+          "title": "Team-NB participates in TEAM PRRC 2026 in Prague",
+          "link": "https://www.team-nb.org/",
+          "date": ""
+        },
+        {
+          "title": "Team-NB with TEAM PRRC 2026 in Prague",
+          "link": "https://www.team-nb.org/",
+          "date": ""
+        }
+      ],
+      "count": 3
+    }
+  ],
+  "total_updates": 3,
+  "summary": "本周发现 1 个来源有更新，共 3 条"
+}
